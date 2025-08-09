@@ -1,0 +1,13 @@
+streamlit
+pandas
+langchain
+langchain-openai
+chromadb
+python-dotenv
+tinfoil
+flask
+transformers
+torch
+flask_sqlalchemy
+datasets
+flask_cors

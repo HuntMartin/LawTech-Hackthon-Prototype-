@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>JusTech AI Assistant</title>
+ <link rel="stylesheet" href="{{ url_for('static', filename='applicant.css') }}">
+</head>
+<body>
+ <div class="container">
+ <header>
+ <h1>Welcome to JusTech AI assistant</h1>
+ </header>
+ <main>
+ <div id="dialogue-box" class="dialogue-box">
+ <p>Hi, I am your AI assistant, feel free to ask me :D</p>
+ </div>
+ <div class="input-area">
+ <input type="text" id="user-input" placeholder="Enter your questions: ...">
+ <button id="submit-button">Submit</button>
+ </div>
+ </main>
+ </div>
+ <script src="{{ url_for('static', filename='applicant.js') }}"></script>
+</body>
+</html>

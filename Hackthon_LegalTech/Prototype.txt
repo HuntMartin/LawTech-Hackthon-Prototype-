@@ -1,0 +1,6 @@
+Login -> Either Applicant side or Staff side
+
+Applicant side: AI decision to give a better concise&understanding suggestion
+
+Staff side: can utilize easy analysis tool combined with decision tree graph and AI summary. Besides, having AI consultant so it can get help.
+

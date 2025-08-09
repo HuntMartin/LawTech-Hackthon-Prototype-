@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Staff Review Assistant</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='staffReviewStyles.css') }}" />
+</head>
+
+<body>
+  <div id="scroll-frame">
+    <div class="container">
+      <!-- Header Tabs -->
+      <div class="header">
+        <div class="tab left-tab">Application Data</div>
+        <div class="tab right-tab">Data Analysis Tool</div>
+      </div>
+
+      <div class="content">
+        <!-- Left Panel -->
+        <div class="panel left-panel">
+          <div class="card applicant-info">
+            <label for="applicant-name-select"><strong>Name:</strong></label>
+            <input type="text" id="applicant-name-search" placeholder="Search applicant..." />
+            <select id="applicant-name-select"></select>
+
+            <p><strong>Age:</strong> <span id="applicant-age"></span></p>
+            <p><strong>Monthly Income:</strong> $<span id="applicant-income"></span>/month</p>
+            <p><strong>Living Situation:</strong> <span id="applicant-living"></span></p>
+            <p><strong>Problem:</strong> <span id="applicant-problem"></span></p>
+          </div>
+
+
+          <div class="card decision-result">
+            <h4>Decision Result:</h4>
+            <p>According to the social security Act 2018</p>
+            <p>Job seeker...TODO</p>
+          </div>
+        </div>
+
+        <!-- Right Panel -->
+        <div class="panel right-panel">
+          <div class="card similarity">
+            <h3>Similarity</h3>
+            <!-- Similarity content -->
+          </div>
+
+          <div class="card expert-tree">
+            <h3>Expert decision Tree</h3>
+            <!-- Decision tree content -->
+          </div>
+
+          <div class="card ai-summary scrollable">
+            <h3>AI Summary</h3>
+            <div id="ai-summary-content">
+              <p>Loading summary...</p>
+            </div>
+          </div>
+
+          <div class="card ai-chat-container">
+            <div id="chat-display" class="scrollable chat-display">
+              <p><em>Hi, I am your AI Consultant. Please ask me the questions!</em></p>
+            </div>
+            <form id="chat-form" autocomplete="off">
+              <label for="chat-input" class="ask-label">Ask questions below:</label>
+              <textarea id="chat-input" placeholder="Please enter your words" rows="3"></textarea>
+              <button type="submit" class="submit-btn">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="{{ url_for('static', filename='staffReviewJs.js') }}"></script>
+</body>
+
+</html>
